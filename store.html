@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Store - Mobiles Laptops Tabs Computers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f6f6f6;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #374151;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            color: #7c3aed;
+            padding-left: 12px;
+            margin-bottom: 12px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+            justify-content: flex-start;
+        }
+
+        .product {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px #0001;
+            width: 220px;
+            padding: 18px;
+            margin-bottom: 18px;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+
+        .product:hover {
+            box-shadow: 0 4px 18px #0002;
+        }
+
+        .product img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            margin-bottom: 12px;
+        }
+
+        .product h2 {
+            font-size: 1em;
+            color: #374151;
+            margin: 10px 0 4px;
+        }
+
+        .product p,
+        .product .price {
+            color: #4b5563;
+            font-size: 0.96em;
+            margin: 0 0 8px;
+        }
+
+        .product .price {
+            color: #16a34a;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .buybtn {
+            background: #7c3aed;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 18px;
+            font-size: 0.99em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .buybtn:hover {
+            background: #be185d;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product {
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Store</h1>
+
+    <!-- Mobiles Section -->
+    <div class="section">
+        <div class="section-title">Mobiles</div>
+        <div class="container">
+            <div class="product"><img src="https://easyphones.co.in/cdn/shop/files/Apple_iPhone_14_pro_Max_-_Refurbished_White.png?v=1755513244&width=990">
+                <h2>iPhone 14 Pro</h2>
+                <p>128GB, Silver</p>
+                <div class="price">₹119,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://20854386.fs1.hubspotusercontent-na1.net/hubfs/20854386/consumer/products/samsung-galaxy-s23-ultra-color/samsung-galaxy-s23-ultra-lavender.png">
+                <h2>Samsung S23 Ultra</h2>
+                <p>256GB, Black</p>
+                <div class="price">₹99,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://media.assettype.com/thequint%2F2022-03%2F7a1c243e-5420-4838-9146-414a847c9c80%2Frealme_gt.webp?auto=format%2Ccompress&fmt=webp&width=720">
+                <h2>Realme GT Neo 3</h2>
+                <p>8GB RAM, Blue</p>
+                <div class="price">₹34,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/oneplus_11_2.jpg">
+                <h2>OnePlus 11</h2>
+                <p>16GB RAM, Green</p>
+                <div class="price">₹55,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://sell.gameloot.in/wp-content/uploads/sites/4/2024/01/Vivo-V29e-5G-8GB-RAM-256GB-Storage.jpg">
+                <h2>Vivo V29 Pro</h2>
+                <p>12GB RAM, Blue</p>
+                <div class="price">₹39,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://www.giztop.com/media/catalog/product/cache/97cc1143d2e20f2b0c8ea91aaa12053c/o/p/oppo_reno_8_pro-2_2.png">
+                <h2>Oppo Reno 8</h2>
+                <p>8GB RAM, Grey</p>
+                <div class="price">₹29,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://www.techspot.com/images/products/2022/smartphones/org/2023-02-27-product-2.jpg">
+                <h2>Xiaomi 13 Pro</h2>
+                <p>12GB RAM, Black</p>
+                <div class="price">₹56,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://www.giztop.com/media/catalog/product/cache/97cc1143d2e20f2b0c8ea91aaa12053c/i/q/iqoo_11_pro_750x750.png">
+                <h2>iQOO 11</h2>
+                <p>8GB RAM, White</p>
+                <div class="price">₹44,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://fonebook.in/wp-content/uploads/2025/09/3-131.jpg">
+                <h2>Samsung A54</h2>
+                <p>6GB RAM, Gold</p>
+                <div class="price">₹23,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://bsimg.nl/images/xiaomi-redmi-note-12-pro-4g-6gb-128gb-zwart_1.png/TVx98Jg98ICFqjy8ek3Fe0i4vcM%3D/fit-in/771x1200/filters%3Aformat%28webp%29%3Aupscale%28%29">
+                <h2>Redmi Note 12</h2>
+                <p>128GB, Green</p>
+                <div class="price">₹16,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://bsimg.nl/images/poco-x6-8gb-256gb-zwart_1.png/M0OwiQhKR7v7Atj_blTrvf02_AI%3D/fit-in/771x1200/filters%3Aformat%28webp%29%3Aupscale%28%29">
+                <h2>Poco X6</h2>
+                <p>8GB RAM, Blue</p>
+                <div class="price">₹21,999</div><button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Laptops Section -->
+    <div class="section">
+        <div class="section-title">Laptops</div>
+        <div class="container">
+            <div class="product"><img src="https://5.imimg.com/data5/JJ/FG/GLADMIN-13387206/inspiron-15-3565-dell-laptop-1000x1000.png">
+                <h2>Dell Inspiron 15</h2>
+                <p>i5, 8GB, 512GB SSD</p>
+                <div class="price">₹51,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://www.jiomart.com/images/product/original/493842049/hp-pavilion-eg3081tu-laptop-13th-gen-intel-core-i5-1340p-16gb-512gb-ssd-intel-iris-xe-graphics-windows-11-home-mso-fhd-39-62cm-15-6-inch-digital-o493842049-p603123731-0-202405221201.jpeg?im=Resize=(420,420)">
+                <p>i7, 16GB, 1TB SSD</p>
+                <div class="price">₹79,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://photos5.appleinsider.com/gallery/51950-103087-M2-MBA-open-xl.jpg">
+                <h2>MacBook Air M2</h2>
+                <p>512GB, Silver</p>
+                <div class="price">₹99,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://firsthub.in/public/uploads/all/sumKO9MOCnByEzPxf29wFG3WSqjzjW429ZyVMoSZ.webp">
+                <h2>Lenovo Ideapad 3</h2>
+                <p>i3, 8GB, 256GB SSD</p>
+                <div class="price">₹38,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://www.gizmochina.com/wp-content/uploads/2024/09/Acer-Aspire-7.jpeg">
+                <h2>Acer Aspire 7</h2>
+                <p>i5, 8GB, 512GB SSD</p>
+                <div class="price">₹58,499</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://img-prd-pim.poorvika.com/cdn-cgi/image/width=500,height=500,quality=75/product/asus-vivobook-15-intel-core-i5-12th-gen-windows-11-home-laptop-x1504za-nj520ws-quiet-blue-8gb-512gb-front-view.png">
+                <h2>Asus VivoBook</h2>
+                <p>i5, 8GB, 1TB SSD</p>
+                <div class="price">₹61,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://laptopmedia.com/wp-content/uploads/2022/08/71e4pmAvWbL._AC_SL1500_.jpg">
+                <h2>MSI GF63</h2>
+                <p>i7, 16GB, GTX 1650</p>
+                <div class="price">₹78,499</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://i.rtings.com/assets/products/yijIHJ3C/apple-macbook-pro-14-2021/design-medium.jpg?format=auto">
+                <h2>Apple MacBook Pro</h2>
+                <p>13" M2 Chip</p>
+                <div class="price">₹1,24,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://laptopmedia.com/wp-content/uploads/2024/10/7-12.jpg">
+                <h2>HP EliteBook</h2>
+                <p>i5, 8GB RAM</p>
+                <div class="price">₹55,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://i.pcmag.com/imagery/reviews/06dHoRASdMFeJVCvXGvBJ7m-1.fit_scale.size_1028x578.v1725794842.jpg">
+                <h2>Dell XPS 13</h2>
+                <p>i7, 16GB, 512GB SSD</p>
+                <div class="price">₹1,11,999</div><button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabs Section -->
+    <div class="section">
+        <div class="section-title">Tabs</div>
+        <div class="container">
+            <div class="product"><img src="https://www.techadvisor.com/wp-content/uploads/2023/10/Samsung-Galaxy-Tab-S8_review_1-1.jpg?resize=1024%2C576&quality=50&strip=all">
+                <h2>Samsung Tab S8</h2>
+                <p>128GB, Black</p>
+                <div class="price">₹49,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://www.imagineonline.store/cdn/shop/files/iPad_Air_5thGen_Cellular_Starlight_PDP_Image_Position-1b_5G__en-IN_154e4c5e-7323-42cd-ad3f-a266a243795f.jpg?v=1705479470&width=493">
+                <h2>iPad Air 2022</h2>
+                <p>64GB, Silver</p>
+                <div class="price">₹63,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://p3-ofp.static.pub//fes/cms/2023/08/30/y68e7f3ew9o2dh1fdndxo4yf5sy3m9837828.png">
+                <h2>Lenovo Tab M10</h2>
+                <p>32GB, Grey</p>
+                <div class="price">₹18,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://images.hindustantimes.com/tech/htmobile4/P37996/hqImage/151923-v1-realme-pad-x-5g-128gb-tablet-hres-4.jpg?impolicy=new-ht-20210112&width=500&height=500">
+                <h2>Realme Pad X</h2>
+                <p>64GB, Blue</p>
+                <div class="price">₹19,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://www.tablethire.com/wp-content/catalogue/tablets/samsung-galaxy-tab-a8/01.jpg">
+                <h2>Samsung Tab A8</h2
+                <p>32GB, Silver</p>
+                <div class="price">₹15,499</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://x.imastudent.com/content/0065500_apple-ipad-mini-7th-gen-83-wi-fi-only_500.png">
+                <h2>Apple iPad Mini</h2>
+                <p>64GB, Pink</p>
+                <div class="price">₹41,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://www.mobileana.com/wp-content/uploads/2024/09/Huawei-MatePad-12-X-Greenery.webp">
+                <h2>Huawei MatePad</h2>
+                <p>64GB, Black</p>
+                <div class="price">₹23,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://sell.gameloot.in/wp-content/uploads/sites/4/2023/08/Nokia-Tab-T20-64GB-Wi-Fi-Only.jpg">
+                <h2>Nokia Tab T20</h2>
+                <p>32GB, Blue</p>
+                <div class="price">₹17,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://static.independent.co.uk/2021/10/01/13/amazon%20fire%2010%20kids%20review%20copy.jpg?quality=75&width=1000&crop=3%3A2%2Csmart&auto=webp">
+                <h2>Amazon Fire HD</h2>
+                <p>32GB, Black</p>
+                <div class="price">₹14,499</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://m.media-amazon.com/images/I/41HlkLYvzlL._SY300_SX300_QL70_FMwebp_.jpg">
+                <h2>Micromax Tab</h2>
+                <p>16GB, Silver</p>
+                <div class="price">₹8,999</div><button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Computers Section -->
+    <div class="section">
+        <div class="section-title">Computers</div>
+        <div class="container">
+            <div class="product"><img src="https://5.imimg.com/data5/KY/UT/MY-18626440/assemble-computer-1000x1000.png">
+                <h2>Assembled PC</h2>
+                <p>i5, 8GB RAM</p>
+                <div class="price">₹29,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://www.dellonline.co.za/cdn/shop/files/shopify-favicon_5de13dbb-5bd5-4ae9-88cd-eff5c62937e5_720x.png?v=1721911750">
+                <h2>Dell OptiPlex</h2>
+                <p>i5, 8GB RAM</p>
+                <div class="price">₹36,499</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://5.imimg.com/data5/SELLER/Default/2023/3/QZ/ZQ/FF/97241654/hp-pavilion-31-5-all-in-one-32-b0590in-desktop-computer-1000x1000.jpg">
+                <h2>HP All-in-One</h2>
+                <p>8GB, 1TB HDD</p>
+                <div class="price">₹42,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://img-prd-pim.poorvika.com/cdn-cgi/image/width=1600,height=1600,quality=75/product/apple-imac-retina-4-5k-display-m3-chip-with-8-core-cpu-and-10-core-gpu-mac-os-mqrt3hn-a-pink-8gb-512gb.png">
+                <h2>Apple iMac</h2>
+                <p>M1 Chip, 8GB RAM</p>
+                <div class="price">₹1,19,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://p3-ofp.static.pub//fes/cms/2024/04/09/dw2ue6pemnd13gw4qnteqipf70w3i3759855.jpg">
+                <h2>Lenovo ThinkCentre</h2>
+                <p>i5, 16GB RAM</p>
+                <div class="price">₹64,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://joebz.com/cdn/shop/products/front_12_dt.bhvsp.007_1024x1024.jpg?v=166201307">
+                <h2>Acer Aspire TC</h2>
+                <p>i3, 8GB RAM</p>
+                <div class="price">₹27,499</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://storage-asset.msi.com/global/picture/image/feature/desktop/P100X-11th/img-intel-xs.jpg">
+                <h2>MSI Creator</h2>
+                <p>i7, 16GB RAM</p>
+                <div class="price">₹85,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://cdn11.bigcommerce.com/s-sp9oc95xrw/images/stencil/1280x1280/products/21538/75795/PRODhththUCT_IMAGE__56130.1706778070.png?c=2?imbypass=on">
+                <h2>Asus ExpertCenter</h2>
+                <p>i5, 8GB RAM</p>
+                <div class="price">₹39,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://zebronics.com/cdn/shop/files/Zeb-Invader-pic10.jpg?v=1688125137&width=1000">
+                <h2>Zebronics Gaming</h2>
+                <p>i7, 16GB RAM</p>
+                <div class="price">₹69,999</div><button class="buybtn">Buy Now</button>
+            </div>
+            <div class="product"><img src="https://www.dial4trade.com/uploaded_files/product_images/thumbs/i5-500gb-foxin-desktop-computer-org-990115021974034050.jpg">
+                <h2>Foxin Desktop</h2>
+                <p>i3, 4GB RAM</p>
+                <div class="price">₹15,999</div><button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

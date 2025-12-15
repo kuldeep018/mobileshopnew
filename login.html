@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stylish Login - MobileShop</title>
+    <link rel="stylesheet" href="login-style.css" />
+</head>
+<body>
+    <div class="login-wrapper">
+        <form id="loginForm" class="login-form">
+            <h2>Login to MobileShop</h2>
+            <div class="input-group">
+                <input type="text" id="username" name="username" required autocomplete="off" placeholder=" " />
+                <label for="username">Username</label>
+                <span class="focus-border"></span>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" required autocomplete="off" placeholder=" " />
+                <label for="password">Password</label>
+                <span class="focus-border"></span>
+            </div>
+            <button type="submit" class="btn animated-btn">Login</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('loginForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const username = form.username.value.trim();
+            const password = form.password.value.trim();
+            if(username === 'admin' && password === 'admin123') {
+                alert('Login Successful');
+                window.location.href = 'index.html';
+            } else {
+                alert('Invalid username or password');
+            }
+        });
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at center, #0f3460, #1a1a2e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #00fff7;
+}
+
+.login-wrapper {
+    background: rgba(15, 52, 96, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00fff7;
+    padding: 3rem 4rem;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-form h2 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #00fff7;
+    width: 100%;
+    color: #00fff7;
+    font-size: 1.2rem;
+    padding: 0.6rem 0;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+input:focus {
+    border-color: #00fff7;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #00fff7;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.3s ease all;
+    font-size: 1rem;
+    user-select: none;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -1rem;
+    font-size: 0.75rem;
+    color: #0ff;
+}
+
+.focus-border {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #00fff7;
+    transition: 0.3s ease all;
+}
+
+input:focus ~ .focus-border {
+    width: 100%;
+}
+
+.animated-btn {
+    background: linear-gradient(45deg, #00fff7, #0f3460);
+    border: none;
+    padding: 0.75rem 2.5rem;
+    border-radius: 40px;
+    color: #0f3460;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00fff7;
+    transition: box-shadow 0.4s ease, transform 0.2s ease;
+}
+
+.animated-btn:hover {
+    box-shadow: 0 0 35px #00fff7, 0 0 50px #00fff7;
+    transform: scale(1.1);
+}
+
+    </style>
+</body>
+</html>

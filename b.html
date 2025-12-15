@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Business</title>
+  <link rel="stylesheet" href="b.css" />
+  <script>
+
+    function myfunctions() {
+      window.location.href = "store.html";
+    }
+    function myfunctions1() {
+      window.location.href = "repair.html";
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <img id="logos" width="60" src="newlogo.jpg" alt="">
+      <h1 class="logo">Newgen Mobiles </h1>
+      <ul class="nav-links">
+        <li><a href="perp.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#repairmob">Repair</a></li>
+        <li><a href="https://www.instagram.com/coding_alex001">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content service1">
+      <h2>Purchase New Phone , Computer, Laptop, Tablet</h2>
+      <p>We help to choose latest and budget friendly.</p>
+      <a href="#services" class="btn">SHOP NOW</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-boxes">
+      <div class="service mobilecard service1">
+        <h3>Latest Mobiles</h3>
+        <p class="cardp">We have all brands Mobiles available like: iPhone, Samsung, OnePlus, Oppo, Vivo, Xiaomi, iQOO
+          and more.</p>
+        <img width="400" src="https://assets.thehansindia.com/h-upload/2024/01/01/1410868-smartphones.webp" alt="">
+        <button class="buybtn" type="button" onclick="myfunctions()">Buy Now</button>
+      </div>
+
+      <div class="service mobilecard service1">
+        <h3>Old Mobiles</h3>
+        <p class="cardp">We have best condition old mobiles all with 6 month warranty.</p>
+        <img width="372" src="https://tiimg.tistatic.com/fp/1/006/615/branded-used-mobile-phone-034.jpg" alt="">
+        <button class="buybtn" type="button" onclick="myfunctions()">Buy Now</button>
+      </div>
+
+      <div class="service mobilecard service1" id="repairmob">
+        <h3>Mobile Repair Services</h3>
+        <p class="cardp">All types of mobiles are repaired here instantly with expert technicians.</p>
+        <img width="380"
+          src="https://static.vecteezy.com/system/resources/thumbnails/017/153/701/small_2x/technician-repairing-inside-of-mobile-phone-integrated-circuit-the-concept-of-data-hardware-technology-photo.jpg"
+          alt="">
+        <button class="buybtn" type="button" onclick="myfunctions1()">Repair Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="service-boxes mobilecard lapdes service service1">
+      <h2>Laptops & Computers</h2>
+      <p>We have all types of laptop & desktop for your requirements like gaming, editing, coding, multitasking,
+        office-work and more.</p>
+      <img width="380" src="https://cdn.mos.cms.futurecdn.net/e9fb3ccffdc38ae3569d03f11ad5044d.jpg.webp" alt="">
+      <button class="buybtn" type="button" onclick="myfunctions()">Buy Now</button>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are a leading mobile business providing the latest and best quality mobile phones, accessories, and repair
+      services. Our mission is to deliver exceptional products and services to our customers, ensuring their
+      satisfaction and trust.</p>
+  </section>
+
+  <section id="info" class="information">
+    <h2>Shop Information</h2>
+    <p>
+      <strong>Address:</strong> 123 Mobile Market, City, Country<br>
+      <strong>Phone:</strong> +91 1234567890 <br>
+      <strong>Email:</strong> newgenmobiles@gmail.com <br>
+      <strong>Shop Timings:</strong> Mon-Sat, 10 AM - 8 PM
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Newgen. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>
